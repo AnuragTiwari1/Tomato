@@ -2,7 +2,11 @@ import * as React from 'react';
 import {Text, TouchableOpacity} from 'react-native';
 import Geolocation from '@react-native-community/geolocation';
 
-const LatLongPicker = ({onSubmit}: {onSubmit: (lat, long) => void}) => {
+const LatLongPicker = ({
+  onSubmit,
+}: {
+  onSubmit: (lat: number, long: number) => void;
+}) => {
   return (
     <TouchableOpacity
       style={{borderWidth: 1, padding: '1%'}}
