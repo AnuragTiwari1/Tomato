@@ -9,7 +9,7 @@ const AppRoutes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="landing" component={HomeScreen} />
+        <Stack.Screen name="Tomato" component={HomeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

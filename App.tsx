@@ -1,15 +1,11 @@
 /**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * Generated with the TypeScript template
- * https://github.com/react-native-community/react-native-template-typescript
- *
+ * File Name: App.tsx
+ * Description: This is the root component definition
  * @format
  */
 
 import * as React from 'react';
-import AppRouter from './Router';
+import AppRouter from './src/Router';
 
 export default function App() {
   return <AppRouter />;
