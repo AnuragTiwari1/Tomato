@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {ScrollView, Text} from 'react-native';
+import {Text} from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 import {IRestaurantPreview} from '../../interfaces/resturants';
 import {getRestaurantByCity} from '../../services/resturants';
