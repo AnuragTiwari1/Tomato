@@ -11,7 +11,7 @@ export const ListRestaurants = () => {
     getRestaurantByCity({q: 'pune'}).then(({data}) => {
       setList(data.restaurants);
     });
-  });
+  }, []);
 
   return (
     <FlatList
