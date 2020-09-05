@@ -23,7 +23,11 @@
     "react-native-reanimated": "^1.13.0",
     "react-native-safe-area-context": "^3.1.7",
     "react-native-screens": "^2.10.1",
-    "react-native-vector-icons": "^7.0.0"
+    "react-native-shared-element": "^0.7.0",
+    "react-native-vector-icons": "^7.0.0",
+    "react-navigation": "^4.4.0",
+    "react-navigation-shared-element": "prerelease",
+    "react-navigation-stack": "^2.8.2"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",

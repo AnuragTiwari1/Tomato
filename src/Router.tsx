@@ -1,10 +1,11 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import {createStackNavigator} from '@react-navigation/stack';
 import HomeScreen from './pages/landing/landing.controller';
 import {ListRestaurants} from './pages/ListRestaurants';
+import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
+import {SearchScreen} from './pages/SearchScreen';
 
-const Stack = createStackNavigator();
+const Stack = createSharedElementStackNavigator();
 
 const AppRoutes = () => {
   return (
@@ -16,6 +17,14 @@ const AppRoutes = () => {
           component={HomeScreen}
         />
         <Stack.Screen name="Restaurants" component={ListRestaurants} />
+        <Stack.Screen
+          name="SearchScreen"
+          component={SearchScreen}
+          sharedElements={() => {
+            return ['locationInput'];
+          }}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

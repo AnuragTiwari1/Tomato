@@ -6,6 +6,8 @@
 import * as React from 'react';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
+import IonIcons from 'react-native-vector-icons/Ionicons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 import {IconProps as VectorIconProps} from 'react-native-vector-icons/Icon';
 import IconProps, {IconSizes} from './iconProps';
 
@@ -13,7 +15,7 @@ export type INamedIcons = Omit<VectorIconProps, 'name'>;
 
 export const iconSizes: Record<IconSizes, number> = {
   small: 12,
-  base: 18,
+  base: 20,
   large: 50,
 };
 
@@ -28,9 +30,17 @@ const WithIconDefaults = (Icon: React.FC<INamedIcons>) => {
 };
 
 export const LocationIcon = WithIconDefaults((props: INamedIcons) => (
-  <FontAwesome name="map-marker" {...props} />
+  <Entypo name="location-pin" {...props} />
 ));
 
 export const MenuIcon = WithIconDefaults((props: INamedIcons) => {
   return <Entypo name="dots-three-vertical" {...props} />;
+});
+
+export const HomeIcon = WithIconDefaults((props: INamedIcons) => {
+  return <Entypo name="home" {...props} />;
+});
+
+export const SearchIcon = WithIconDefaults((props: INamedIcons) => {
+  return <IonIcons name="search" {...props} />;
 });
