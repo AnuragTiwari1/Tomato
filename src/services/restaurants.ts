@@ -1,7 +1,7 @@
 import {ApiCaller} from '../common/ApiCaller';
 import {searchRestaurant} from '../config/urls';
 import {AxiosResponse} from 'axios';
-import {IRestaurantPreview} from '../interfaces/resturants';
+import {IRestaurantPreview} from '../interfaces/restaurants';
 
 export const getRestaurantByCity = ({
   lat,
@@ -18,6 +18,23 @@ export const getRestaurantByCity = ({
       lat,
       lon,
       q,
+    },
+  });
+};
+
+export const getRestaurantByLatLong = ({
+  lat,
+  lon,
+}: {
+  lat: number;
+  lon: number;
+}): Promise<
+  AxiosResponse<{nearby_restaurants: {restaurant: IRestaurantPreview}[]}>
+> => {
+  return ApiCaller.get('/geocode', {
+    params: {
+      lat,
+      lon,
     },
   });
 };

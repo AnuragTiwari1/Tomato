@@ -1,8 +1,8 @@
 import * as React from 'react';
 import {Text} from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
-import {IRestaurantPreview} from '../../interfaces/resturants';
-import {getRestaurantByCity} from '../../services/resturants';
+import {IRestaurantPreview} from '../../interfaces/restaurants';
+import {getRestaurantByCity} from '../../services/restaurants';
 
 export const ListRestaurants = () => {
   const [list, setList] = React.useState<IRestaurantPreview[]>([]);

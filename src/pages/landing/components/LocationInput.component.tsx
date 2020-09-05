@@ -14,9 +14,8 @@ export const LocationInput = ({
   location,
 }: LocationInputProps) => {
   return (
-    <View style={{alignItems: 'center'}}>
+    <View style={{alignItems: 'center', flexDirection: 'row'}}>
       <LocationIcon size="large" />
-      <Text>Pick location</Text>
       <View style={{flexDirection: 'row', alignItems: 'center'}}>
         <TextInput
           placeholder="enter locality here"
