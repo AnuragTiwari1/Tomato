@@ -1,3 +1,8 @@
+/*
+ * fileName: styles.ts
+ * description: this file contains the styles used for the loader component
+ */
+
 import {StyleSheet} from 'react-native';
 
 export const LOGO_SIZE = 80;

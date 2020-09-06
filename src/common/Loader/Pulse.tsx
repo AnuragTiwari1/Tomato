@@ -1,3 +1,8 @@
+/*
+ * fileName: Pulse.tsx
+ * description: this file contains the implementation of the tinder like pulse animation and it's styles
+ */
+
 import * as React from 'react';
 import {StyleSheet, Animated} from 'react-native';
 

@@ -1,3 +1,7 @@
+/*
+ * fileName: useLatLong.ts
+ * description: this file contains the custom hook to access user location inside any FC.
+ */
 import * as React from 'react';
 import Geolocation from '@react-native-community/geolocation';
 

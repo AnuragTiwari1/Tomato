@@ -1,13 +1,11 @@
 /*
- * fileName: Icons.tsx
+ * fileName: icons.tsx
  * description: this file contains the icons used in the project
  */
 
 import * as React from 'react';
-import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import Entypo from 'react-native-vector-icons/Entypo';
 import IonIcons from 'react-native-vector-icons/Ionicons';
-import AntDesign from 'react-native-vector-icons/AntDesign';
 import {IconProps as VectorIconProps} from 'react-native-vector-icons/Icon';
 import IconProps, {IconSizes} from './iconProps';
 

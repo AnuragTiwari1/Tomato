@@ -1,3 +1,8 @@
+/*
+ * fileName: index.tsx
+ * description: this file contains the implementation of the app loader
+ */
+
 import * as React from 'react';
 import {Text, View, Image} from 'react-native';
 import {styles} from './styles';

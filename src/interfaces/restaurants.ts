@@ -1,3 +1,8 @@
+/*
+ * fileName: restaurants.ts
+ * description: this file contains the type definition of restaurants
+ */
+
 export interface IRestaurantPreview {
   id: string;
   name: string;

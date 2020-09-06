@@ -1,3 +1,8 @@
+/*
+ * fileName: ApiCaller.ts
+ * description: this file contains the axios instance which will be act as default for every api call
+ */
+
 import axios from 'axios';
 import {ZOMATO_API_KEY, BASE_URL} from '@env';
 

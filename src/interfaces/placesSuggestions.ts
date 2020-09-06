@@ -1,3 +1,7 @@
+/*
+ * fileName: placesSuggestions.ts
+ * description: this file contains the type definition of places suggestion
+ */
 export interface PlacesSuggestion {
   id: number;
   name: string;
