@@ -19,4 +19,10 @@ export const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 22,
   },
+  discover_heading: {
+    marginVertical: '1%',
+  },
+  not_available_text: {
+    textAlign: 'center',
+  },
 });

@@ -6,4 +6,8 @@ export interface IRestaurantPreview {
     aggregate_rating: string;
     rating_text: string;
   };
+  location: {
+    locality: string;
+    city: string;
+  };
 }

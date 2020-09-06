@@ -7,6 +7,12 @@ import {SearchScreen} from './pages/SearchScreen';
 
 const Stack = createSharedElementStackNavigator();
 
+export type RootStackParamList = {
+  Tomato: undefined;
+  Restaurants: {cityId: number; lat: number; lon: number} | undefined;
+  SearchScreen: undefined;
+};
+
 const AppRoutes = () => {
   return (
     <NavigationContainer>

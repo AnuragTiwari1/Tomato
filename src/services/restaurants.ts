@@ -1,36 +1,31 @@
 import {ApiCaller} from '../common/ApiCaller';
 import {searchRestaurant} from '../config/urls';
-import {AxiosResponse} from 'axios';
-import {IRestaurantPreview} from '../interfaces/restaurants';
+import {
+  ISearchRestaurants,
+  ISearchRestaurantsResponse,
+  IGetRestaurantByLatLongProps,
+  ILocation,
+} from './restaurantsServices';
 
-export const getRestaurantByCity = ({
-  lat,
-  lon,
-  q,
-}: {
-  lat?: number;
-  lon?: number;
-  q?: string;
-}): Promise<AxiosResponse<{restaurants: IRestaurantPreview[]}>> => {
+export const searchRestaurants = (
+  params: ISearchRestaurants,
+): ISearchRestaurantsResponse => {
+  const {id, start = 0, lat, lon} = params;
   return ApiCaller.get(searchRestaurant, {
     params: {
       entity_type: 'city',
+      entity_id: id,
+      start,
       lat,
       lon,
-      q,
     },
   });
 };
 
-export const getRestaurantByLatLong = ({
-  lat,
-  lon,
-}: {
-  lat: number;
-  lon: number;
-}): Promise<
-  AxiosResponse<{nearby_restaurants: {restaurant: IRestaurantPreview}[]}>
-> => {
+export const getRestaurantByLatLong = (
+  params: ILocation,
+): IGetRestaurantByLatLongProps => {
+  const {lat, lon} = params;
   return ApiCaller.get('/geocode', {
     params: {
       lat,
