@@ -1,14 +1,18 @@
 import React from 'react';
 import {IRestaurantPreview} from '../../../interfaces/restaurants';
-import {View, Image, Text, StyleSheet} from 'react-native';
+import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
+import {useNavigation} from '@react-navigation/native';
 
 interface RestaurantPreviewProps extends IRestaurantPreview {
   onPress: () => void;
 }
 
 export const RestaurantPreview = (props: RestaurantPreviewProps) => {
+  const navigation = useNavigation();
   return (
-    <View style={styles.wrapper}>
+    <TouchableOpacity
+      style={styles.wrapper}
+      onPress={() => navigation.navigate('RestaurantDetails', {id: props.id})}>
       <Image
         source={{uri: props.thumb}}
         style={styles.image_card}
@@ -21,7 +25,7 @@ export const RestaurantPreview = (props: RestaurantPreviewProps) => {
             styles.details_text
           }>{`${props.location.locality}, ${props.location.city}`}</Text>
       </View>
-    </View>
+    </TouchableOpacity>
   );
 };
 

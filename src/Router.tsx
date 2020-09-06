@@ -4,6 +4,7 @@ import HomeScreen from './pages/landing/landing.controller';
 import {ListRestaurants} from './pages/ListRestaurants';
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
 import {SearchScreen} from './pages/SearchScreen';
+import {RestaurantDetails} from './pages/RestaurantDetails';
 
 const Stack = createSharedElementStackNavigator();
 
@@ -11,6 +12,7 @@ export type RootStackParamList = {
   Tomato: undefined;
   Restaurants: {cityId: number; lat: number; lon: number} | undefined;
   SearchScreen: undefined;
+  RestaurantDetails: {id: number};
 };
 
 const AppRoutes = () => {
@@ -31,6 +33,7 @@ const AppRoutes = () => {
           }}
           options={{headerShown: false}}
         />
+        <Stack.Screen name="RestaurantDetails" component={RestaurantDetails} />
       </Stack.Navigator>
     </NavigationContainer>
   );

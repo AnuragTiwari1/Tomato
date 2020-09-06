@@ -33,3 +33,11 @@ export const getRestaurantByLatLong = (
     },
   });
 };
+
+export const getRestaurantDetailsById = (id: number) => {
+  return ApiCaller.get('/restaurant', {
+    params: {
+      res_id: id,
+    },
+  });
+};
