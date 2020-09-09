@@ -5,8 +5,8 @@ import {SharedElement} from 'react-navigation-shared-element';
 import {TOMATO_LOGO} from '../../assets';
 import {Loader} from '../../common/Loader';
 import useCurrentLatLong from '../../hooks/useLatLong';
-import {IRestaurantPreview} from '../../interfaces/restaurants';
-import {getRestaurantByLatLong} from '../../services/restaurants';
+import {IRestaurantPreview} from '../../interfaces/IRestaurants';
+import {RestaurantServices} from '../../services/restaurants';
 import {LocationInput} from './components/LocationInput.component';
 import {RestaurantPreview} from './components/RestaurantPreviewCard';
 import {Toolbar} from './components/Toolbar';
@@ -20,12 +20,14 @@ const HomeScreen = () => {
     IRestaurantPreview[]
   >([]);
   const [currentId, setCurrentId] = React.useState<number | null>(); //this thing is not being used in ui rendering so can be optimized with ref
+  const restaurantServices = new RestaurantServices();
 
   React.useEffect(() => {
     const {lat, lon} = location;
     if (lat && lon) {
       setLoading(true);
-      getRestaurantByLatLong({lat, lon})
+      restaurantServices
+        .getRestaurantByLatLong({lat, lon})
         .then(({data}) => {
           setRestaurantList(data.nearby_restaurants.map((e) => e.restaurant));
           setCurrentId(data.location.city_id);
@@ -35,7 +37,7 @@ const HomeScreen = () => {
           setLoading(false);
         });
     }
-  }, [location]);
+  }, [location, restaurantServices]);
 
   if (isLoading) {
     return <Loader textMessage="loading restaurants near you" />;

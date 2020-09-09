@@ -1,5 +1,5 @@
 import {AxiosResponse} from 'axios';
-import {IRestaurantPreview} from '../interfaces/restaurants';
+import {IRestaurantPreview} from '../interfaces/IRestaurants';
 
 export interface ILocation {
   lat: number;

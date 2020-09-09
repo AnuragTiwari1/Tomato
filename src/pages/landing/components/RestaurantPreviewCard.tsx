@@ -1,5 +1,5 @@
 import React from 'react';
-import {IRestaurantPreview} from '../../../interfaces/restaurants';
+import {IRestaurantPreview} from '../../../interfaces/IRestaurants';
 import {View, Image, Text, StyleSheet, TouchableOpacity} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 

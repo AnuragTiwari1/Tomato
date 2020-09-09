@@ -3,8 +3,8 @@ import React from 'react';
 import {StyleSheet, Text, View, TextInput} from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 import {SharedElement} from 'react-navigation-shared-element';
-import {PlacesSuggestion} from '../../interfaces/placesSuggestions';
-import {getCitySuggestions} from '../../services/cities';
+import {PlacesSuggestion} from '../../interfaces/IPlacesSuggestions';
+import {CitiesServices} from '../../services/cities';
 import {LocationInput} from '../landing/components/LocationInput.component';
 
 export const SearchScreen = () => {
@@ -14,6 +14,8 @@ export const SearchScreen = () => {
   const navigation = useNavigation();
   const inputRef = React.useRef<TextInput>();
 
+  const citiesServices = new CitiesServices();
+
   React.useEffect(() => {
     inputRef.current?.focus();
   }, []);
@@ -21,7 +23,8 @@ export const SearchScreen = () => {
   React.useEffect(() => {
     if (searchQuery.length >= 3) {
       setLoading(true);
-      getCitySuggestions(searchQuery)
+      citiesServices
+        .getCitySuggestions(searchQuery)
         .then(({data}) => {
           setLoading(false);
           setSuggestions(data.location_suggestions);
@@ -30,7 +33,7 @@ export const SearchScreen = () => {
           setLoading(false);
         });
     }
-  }, [searchQuery]);
+  }, [searchQuery, citiesServices]);
 
   return (
     <View style={styles.wrapper}>

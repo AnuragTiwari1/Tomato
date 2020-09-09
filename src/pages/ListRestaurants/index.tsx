@@ -1,11 +1,10 @@
 import * as React from 'react';
-import {FlatList} from 'react-native-gesture-handler';
-import {IRestaurantPreview} from '../../interfaces/restaurants';
+import {IRestaurantPreview} from '../../interfaces/IRestaurants';
 import {RouteProp} from '@react-navigation/native';
 import {RootStackParamList} from '../../Router';
-import {searchRestaurants} from '../../services/restaurants';
+import {RestaurantServices} from '../../services/restaurants';
 import {RestaurantPreview} from '../landing/components/RestaurantPreviewCard';
-import {StyleSheet} from 'react-native';
+import {StyleSheet, FlatList} from 'react-native';
 
 type ListRestaurantsNavigationRouteProp = RouteProp<
   RootStackParamList,
@@ -19,13 +18,14 @@ export const ListRestaurants = ({
 }) => {
   const [list, setList] = React.useState<IRestaurantPreview[]>([]);
   // const [isLoading, setLoading] = React.useState(false);
+  const restaurantServices = new RestaurantServices();
 
   React.useEffect(() => {
     const cityId = route.params?.cityId;
 
     // setLoading(true);
     if (cityId) {
-      searchRestaurants({id: cityId}).then(({data}) => {
+      restaurantServices.searchRestaurants({id: cityId}).then(({data}) => {
         // setLoading(false);
         setList([...list, ...data.restaurants.map((e) => e.restaurant)]);
       });
