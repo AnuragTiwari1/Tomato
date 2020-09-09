@@ -1,6 +1,6 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
-import HomeScreen from './pages/landing/landing.controller';
+import HomeScreen from './pages/landing';
 import {ListRestaurants} from './pages/ListRestaurants';
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
 import {SearchScreen} from './pages/SearchScreen';

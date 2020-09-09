@@ -1,6 +1,13 @@
 import * as React from 'react';
-import {View, TextInput, StyleSheet, ActivityIndicator} from 'react-native';
+import {
+  View,
+  TextInput,
+  StyleSheet,
+  ActivityIndicator,
+  Platform,
+} from 'react-native';
 import {SearchIcon} from '../../../common/icons/icons';
+import {SEARCH_PLACEHOLDER} from '../../../lang/common';
 
 export const LocationInput = React.forwardRef<
   TextInput,
@@ -9,7 +16,7 @@ export const LocationInput = React.forwardRef<
   return (
     <View style={styles.wrapper}>
       <TextInput
-        placeholder="enter locality here"
+        placeholder={SEARCH_PLACEHOLDER}
         style={styles.input}
         ref={ref}
         {...props}
@@ -31,6 +38,7 @@ const styles = StyleSheet.create({
     borderColor: 'grey',
     borderRadius: 50,
     marginVertical: 25,
+    paddingVertical: Platform.OS === 'ios' ? 15 : 0,
   },
   input: {
     flex: 1,

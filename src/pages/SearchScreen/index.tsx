@@ -1,11 +1,12 @@
 import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {StyleSheet, Text, View, TextInput} from 'react-native';
+import {StyleSheet, Text, View, TextInput, SafeAreaView} from 'react-native';
 import {FlatList} from 'react-native-gesture-handler';
 import {SharedElement} from 'react-navigation-shared-element';
 import {PlacesSuggestion} from '../../interfaces/IPlacesSuggestions';
 import {CitiesServices} from '../../services/cities';
-import {LocationInput} from '../landing/components/LocationInput.component';
+import {LocationInput} from '../landing/components/LocationInput';
+import {TIP_TEXT} from '../../lang/common';
 
 export const SearchScreen = () => {
   const [suggestions, setSuggestions] = React.useState<PlacesSuggestion[]>([]);
@@ -33,40 +34,40 @@ export const SearchScreen = () => {
           setLoading(false);
         });
     }
-  }, [searchQuery, citiesServices]);
+  }, [searchQuery]); //eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <View style={styles.wrapper}>
-      <SharedElement id={'locationInput'}>
-        <LocationInput
-          onFocus={() => {}}
-          value={searchQuery}
-          isLoading={isLoading}
-          ref={(input) => {
-            if (input) {
-              inputRef.current = input;
-              input.focus();
-            }
-          }}
-          onChangeText={setSearchQuery}
+    <SafeAreaView style={{flex: 1}}>
+      <View style={styles.wrapper}>
+        <SharedElement id={'locationInput'}>
+          <LocationInput
+            onFocus={() => {}}
+            value={searchQuery}
+            isLoading={isLoading}
+            ref={(input) => {
+              if (input) {
+                inputRef.current = input;
+                input.focus();
+              }
+            }}
+            onChangeText={setSearchQuery}
+          />
+        </SharedElement>
+        <Text style={styles.tips_text}>{TIP_TEXT}</Text>
+        <FlatList
+          data={suggestions}
+          renderItem={({item}) => (
+            <Text
+              style={styles.suggestion_text}
+              onPress={() => {
+                navigation.navigate('Restaurants', {cityId: item.id});
+              }}>
+              {item.name}
+            </Text>
+          )}
         />
-      </SharedElement>
-      <Text style={styles.tips_text}>
-        Tip: Enter cities name above and we will try to guess
-      </Text>
-      <FlatList
-        data={suggestions}
-        renderItem={({item}) => (
-          <Text
-            style={styles.suggestion_text}
-            onPress={() => {
-              navigation.navigate('Restaurants', {cityId: item.id});
-            }}>
-            {item.name}
-          </Text>
-        )}
-      />
-    </View>
+      </View>
+    </SafeAreaView>
   );
 };
 

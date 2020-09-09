@@ -6,6 +6,7 @@ import {RouteProp} from '@react-navigation/native';
 import {Loader} from '../../common/Loader';
 import {RestaurantServices} from '../../services/restaurants';
 import {ScrollView} from 'react-native-gesture-handler';
+import {LOADING_KITCHEN} from '../../lang/common';
 
 type RestaurantDetailsNavigationRouteProp = RouteProp<
   RootStackParamList,
@@ -33,10 +34,10 @@ export const RestaurantDetails = ({
         })
         .catch(() => setLoading(false));
     }
-  }, [route, restaurantServices]);
+  }, [route]); //eslint-disable-line react-hooks/exhaustive-deps
 
   if (isLoading) {
-    return <Loader textMessage="taking a quick peek at the kitchen" />;
+    return <Loader textMessage={LOADING_KITCHEN} />;
   }
 
   return (
