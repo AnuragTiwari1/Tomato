@@ -1,4 +1,4 @@
-import {IGetCitySuggestions} from './ICitiesServices';
+import {IGetCitySuggestions} from './interfaces/ICitiesServices';
 import {HttpCaller} from './HttpCaller';
 
 export class CitiesServices extends HttpCaller {

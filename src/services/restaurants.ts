@@ -4,7 +4,7 @@ import {
   ISearchRestaurantsResponse,
   IGetRestaurantByLatLongProps,
   ILocation,
-} from './IRestaurantsServices';
+} from './interfaces/IRestaurantsServices';
 import {HttpCaller} from './HttpCaller';
 
 export class RestaurantServices extends HttpCaller {
