@@ -26,7 +26,6 @@ export class RestaurantServices extends HttpCaller {
         lon,
       },
     });
-
   }
 
   /**
