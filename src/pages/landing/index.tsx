@@ -46,7 +46,7 @@ const HomeScreen = () => {
 
   return (
     <SafeAreaView style={{flex: 1}}>
-      <View testID="Landing_Screen" style={styles.wrapper}>
+      <View style={styles.wrapper}>
         <Toolbar />
         <Image
           source={TOMATO_LOGO}

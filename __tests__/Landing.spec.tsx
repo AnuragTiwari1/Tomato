@@ -15,6 +15,7 @@ import {
   SEARCH_PLACEHOLDER,
 } from '../src/lang/common';
 import {useNavigation} from '@react-navigation/native';
+const geocodeMockData = require('../mock_server/geocode.json');
 
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper'); //this disables the useNativeDriver warnings
 
@@ -39,14 +40,13 @@ jest.mock('@react-native-community/geolocation', () => ({
 it('renders correctly', async () => {
   axios.get.mockImplementation(() => Promise.resolve(''));
   const mockNavigate = jest.fn();
+  useNavigation.mockImplementation(() => ({navigate: mockNavigate}));
 
-  const {getByText, getByPlaceholderText, queryByTestId, queryByText} = render(
-    <HomeScreen />,
-  );
+  const {getByText, getByPlaceholderText, queryByText} = render(<HomeScreen />);
 
-  // const container = queryByTestId('Landing_Screen');
-  // const loader = queryByText(LOADING_RESTAURANT_NEARBY);
-  // expect(container).toContainElement(loader);
+  //checking if the loader appears on first mount
+  expect(getByText(LOADING_RESTAURANT_NEARBY)).toBeTruthy();
+
   //checking if we are able to receive the location
   expect(Geolocation.getCurrentPosition).toBeCalledTimes(1);
 
@@ -59,12 +59,13 @@ it('renders correctly', async () => {
     params: {lat: 18.54321, lon: 72.3456},
   });
 
-  //testing navigation
-  useNavigation.mockImplementation(() => ({navigate: mockNavigate}));
-  // fireEvent.press(getByPlaceholderText(SEARCH_PLACEHOLDER));
-  // await waitFor(() => expect(mockNavigate).toHaveBeenCalledTimes(1));
-  // expect(mockNavigate).toHaveBeenCalledWith('Home');
+  //checking if we are showing the api data or not
+  // expect(queryByText('Otto Enoteca & Pizzeria')).toHaveLength(3);
 
+  //testing navigation on input focus
   const searchBox = getByPlaceholderText(SEARCH_PLACEHOLDER);
-  // console.log('the searchbox element is >>>>>>>>>', searchBox);
+  fireEvent(searchBox, 'onFocus');
+
+  expect(mockNavigate).toHaveBeenCalledTimes(1);
+  expect(mockNavigate).toHaveBeenCalledWith('SearchScreen');
 });
