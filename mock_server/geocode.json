@@ -1,105 +1,641 @@
 {
-  "locality": {
-    "entity_type": "group",
-    "entity_id": "36932",
-    "title": "Chelsea Market, Chelsea, New York City",
-    "latitude": "40.742051",
-    "longitude": "-74.004821",
-    "city_id": "280",
-    "city_name": "New York City",
-    "country_id": "216",
-    "country_name": "United States"
+  "location": {
+    "entity_type": "subzone",
+    "entity_id": 86841,
+    "title": "Rajbansi Nagar",
+    "latitude": "25.5990700000",
+    "longitude": "85.1081590000",
+    "city_id": 40,
+    "city_name": "Patna",
+    "country_id": 1,
+    "country_name": "India"
   },
   "popularity": {
-    "popularity": "4.92",
-    "nightlife_index": "4.95",
-    "top_cuisines": ["cafe"]
+    "popularity": "2.71",
+    "nightlife_index": "0.00",
+    "nearby_res": [
+      "18587488",
+      "18593203",
+      "18791287",
+      "18881164",
+      "18817325",
+      "18789501",
+      "18705070",
+      "18833682",
+      "18988028"
+    ],
+    "top_cuisines": [
+      "North Indian",
+      "Chinese",
+      "Fast Food",
+      "Mithai",
+      "Biryani"
+    ],
+    "popularity_res": "100",
+    "nightlife_res": "10",
+    "subzone": "Rajbansi Nagar",
+    "subzone_id": 86841,
+    "city": "Patna"
   },
-  "link": "https://www.zomato.com/new-york-city/chelsea-restaurants",
+  "link": "https://www.zomato.com/patna/rajbansi-nagar-restaurants",
   "nearby_restaurants": [
     {
-      "id": "16774318",
-      "name": "Otto Enoteca & Pizzeria",
-      "url": "https://www.zomato.com/new-york-city/otto-enoteca-pizzeria-greenwich-village",
-      "location": {
-        "address": "1 5th Avenue, New York, NY 10003",
-        "locality": "Greenwich Village",
-        "city": "New York City",
-        "latitude": "40.732013",
-        "longitude": "-73.996155",
-        "zipcode": "10003",
-        "country_id": "216"
-      },
-      "average_cost_for_two": "60",
-      "price_range": "2",
-      "currency": "$",
-      "thumb": "https://b.zmtcdn.com/data/pictures/chains/8/16774318/a54deb9e4dbb79dd7c8091b30c642077_featured_thumb.png",
-      "featured_image": "https://d.zmtcdn.com/data/pictures/chains/8/16774318/a54deb9e4dbb79dd7c8091b30c642077_featured_v2.png",
-      "photos_url": "https://www.zomato.com/new-york-city/otto-enoteca-pizzeria-greenwich-village/photos#tabtop",
-      "menu_url": "https://www.zomato.com/new-york-city/otto-enoteca-pizzeria-greenwich-village/menu#tabtop",
-      "events_url": "https://www.zomato.com/new-york-city/otto-enoteca-pizzeria-greenwich-village/events#tabtop",
-      "user_rating": {
-        "aggregate_rating": "3.7",
-        "rating_text": "Very Good",
-        "rating_color": "5BA829",
-        "votes": "1046"
-      },
-      "has_online_delivery": "0",
-      "is_delivering_now": "0",
-      "has_table_booking": "0",
-      "deeplink": "zomato://r/16774318",
-      "cuisines": "Cafe",
-      "all_reviews_count": "15",
-      "photo_count": "18",
-      "phone_numbers": "(212) 228-2930",
-      "photos": [
-        {
-          "id": "u_MjA5MjY1OTk5OT",
-          "url": "https://b.zmtcdn.com/data/reviews_photos/c15/9eb13ceaf6e90129c276ce6ff980bc15_1435111695_640_640_thumb.JPG",
-          "thumb_url": "https://b.zmtcdn.com/data/reviews_photos/c15/9eb13ceaf6e90129c276ce6ff980bc15_1435111695_200_thumb.JPG",
-          "user": {
-            "name": "John Doe",
-            "zomato_handle": "John",
-            "foodie_level": "Super Foodie",
-            "foodie_level_num": "9",
-            "foodie_color": "f58552",
-            "profile_url": "https://www.zomato.com/john",
-            "profile_deeplink": "zoma.to/u/1170245",
-            "profile_image": "string"
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": 1,
+            "takeaway": -1
           },
-          "res_id": "16782899",
-          "caption": "#awesome",
-          "timestamp": "1435111770",
-          "friendly_time": "3 months ago",
-          "width": "640",
-          "height": "640",
-          "comments_count": "0",
-          "likes_count": "0"
-        }
-      ],
-      "all_reviews": [
-        {
-          "rating": "5",
-          "review_text": "The best latte I've ever had. It tasted a little sweet",
-          "id": "24127336",
-          "rating_color": "305D02",
-          "review_time_friendly": "2 months ago",
-          "rating_text": "Insane!",
-          "timestamp": "1435507367",
-          "likes": "0",
-          "user": {
-            "name": "John Doe",
-            "zomato_handle": "John",
-            "foodie_level": "Super Foodie",
-            "foodie_level_num": "9",
-            "foodie_color": "f58552",
-            "profile_url": "https://www.zomato.com/john",
-            "profile_deeplink": "zoma.to/u/1170245",
-            "profile_image": "string"
+          "res_id": 18587488,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18587488",
+        "name": "LBW - Lounge Before Wicket",
+        "url": "https://www.zomato.com/patna/lbw-lounge-before-wicket-rajbansi-nagar?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Urja Stadium, Near DAV school, Rajbanshi Nagar, Patna",
+          "locality": "Rajbansi Nagar",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6100010000",
+          "longitude": "85.1038270000",
+          "zipcode": "800023",
+          "country_id": 1,
+          "locality_verbose": "Rajbansi Nagar, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Continental, North Indian, Chinese",
+        "average_cost_for_two": 800,
+        "price_range": 3,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/8/18587488/0fc109917e53077513cdced76f1d3e3c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "4.2",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.2"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "700"
+            }
           },
-          "comments_count": "0"
-        }
-      ]
+          "votes": 1665
+        },
+        "photos_url": "https://www.zomato.com/patna/lbw-lounge-before-wicket-rajbansi-nagar/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/lbw-lounge-before-wicket-rajbansi-nagar/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/8/18587488/0fc109917e53077513cdced76f1d3e3c.jpg?output-format=webp",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18587488",
+        "order_url": "https://www.zomato.com/patna/lbw-lounge-before-wicket-rajbansi-nagar/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/lbw-lounge-before-wicket-rajbansi-nagar/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": 1,
+            "takeaway": -1
+          },
+          "res_id": 18593203,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18593203",
+        "name": "LBW - Lounge Before Wicket",
+        "url": "https://www.zomato.com/patna/hi-q-foods-gardanibagh?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Kachchi Talab, Saristabad Road, Gardanibagh, Patna",
+          "locality": "Gardanibagh",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.5918680000",
+          "longitude": "85.1204170000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Gardanibagh, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "North Indian",
+        "average_cost_for_two": 500,
+        "price_range": 2,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "4.1",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.1"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "700"
+            }
+          },
+          "votes": 821
+        },
+        "photos_url": "https://www.zomato.com/patna/hi-q-foods-gardanibagh/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/hi-q-foods-gardanibagh/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 1,
+        "is_delivering_now": 1,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18593203",
+        "order_url": "https://www.zomato.com/patna/hi-q-foods-gardanibagh/order?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "order_deeplink": "",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/hi-q-foods-gardanibagh/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18791287,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18791287",
+        "name": "LBW - Lounge Before Wicket",
+        "url": "https://www.zomato.com/patna/tava-sri-krishnapuri?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Mohanpur, Near St.Karens School, Punaichak, Patna",
+          "locality": "Sri Krishnapuri",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6096190000",
+          "longitude": "85.1127700000",
+          "zipcode": "800023",
+          "country_id": 1,
+          "locality_verbose": "Sri Krishnapuri, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Chinese, North Indian, Rolls, Momos",
+        "average_cost_for_two": 300,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/7/18791287/4d77c62751410689b823112f2a77b47c.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "4.0",
+          "rating_text": "Very Good",
+          "rating_color": "5BA829",
+          "rating_obj": {
+            "title": {
+              "text": "4.0"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "600"
+            }
+          },
+          "votes": 1058
+        },
+        "photos_url": "https://www.zomato.com/patna/tava-sri-krishnapuri/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/tava-sri-krishnapuri/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/7/18791287/4d77c62751410689b823112f2a77b47c.jpg?output-format=webp",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18791287",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/tava-sri-krishnapuri/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18881164,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18881164",
+        "name": "Tava",
+        "url": "https://www.zomato.com/patna/food-bar-kidwaipuri?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "UGF 2, Ashoka Tower, Boring Canal Road, Kidwaipuri, Patna",
+          "locality": "Kidwaipuri",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6095068000",
+          "longitude": "85.1153103000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Kidwaipuri, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Desserts, Beverages",
+        "average_cost_for_two": 200,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.6",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "rating_obj": {
+            "title": {
+              "text": "3.6"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "600"
+            }
+          },
+          "votes": 282
+        },
+        "photos_url": "https://www.zomato.com/patna/food-bar-kidwaipuri/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/food-bar-kidwaipuri/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18881164",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/food-bar-kidwaipuri/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18817325,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18817325",
+        "name": "Ritaj Biryani",
+        "url": "https://www.zomato.com/patna/ritaj-biryani-sri-krishnapuri?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Hartli More, Opposite Pant Bhavan, Sri Krishnapuri, Patna",
+          "locality": "Sri Krishnapuri",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6069038000",
+          "longitude": "85.1154369000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Sri Krishnapuri, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Biryani",
+        "average_cost_for_two": 300,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.4",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "rating_obj": {
+            "title": {
+              "text": "3.4"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "500"
+            }
+          },
+          "votes": 328
+        },
+        "photos_url": "https://www.zomato.com/patna/ritaj-biryani-sri-krishnapuri/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/ritaj-biryani-sri-krishnapuri/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18817325",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/ritaj-biryani-sri-krishnapuri/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18789501,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18789501",
+        "name": "Food Hut",
+        "url": "https://www.zomato.com/patna/food-hut-rajbansi-nagar?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Shop No-10, New Punaichak Near SBI Rajbanshi Nagar, Opp. R.D Tower Appartment Singh Market Rajbansi Nagar, Patna",
+          "locality": "Rajbansi Nagar",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6084830000",
+          "longitude": "85.1100230000",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Rajbansi Nagar, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "North Indian, Chinese",
+        "average_cost_for_two": 200,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "3.3",
+          "rating_text": "Average",
+          "rating_color": "CDD614",
+          "rating_obj": {
+            "title": {
+              "text": "3.3"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "500"
+            }
+          },
+          "votes": 74
+        },
+        "photos_url": "https://www.zomato.com/patna/food-hut-rajbansi-nagar/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/food-hut-rajbansi-nagar/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18789501",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/food-hut-rajbansi-nagar/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18705070,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18705070",
+        "name": "Amrapali Vatika",
+        "url": "https://www.zomato.com/patna/amrapali-vatika-sri-krishnapuri?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "NH 30, Veerchand Patel Road Area, Patna, Bihar, Sri Krishnapuri, Patna",
+          "locality": "Sri Krishnapuri",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6072411814",
+          "longitude": "85.1171112433",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Sri Krishnapuri, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "South Indian, North Indian, Chinese",
+        "average_cost_for_two": 300,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/0/18705070/d08b6b5d1a0e693566c6186e6d718eef.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "3.5",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "rating_obj": {
+            "title": {
+              "text": "3.5"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "500"
+            }
+          },
+          "votes": 22
+        },
+        "photos_url": "https://www.zomato.com/patna/amrapali-vatika-sri-krishnapuri/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/amrapali-vatika-sri-krishnapuri/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/0/18705070/d08b6b5d1a0e693566c6186e6d718eef.jpg",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18705070",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/amrapali-vatika-sri-krishnapuri/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18833682,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18833682",
+        "name": "Spicy Food",
+        "url": "https://www.zomato.com/patna/spicy-food-rajbansi-nagar?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "Mohanpur, Punaichowk Near Hanuman Mandir( Pump House), Rajbansi Nagar, Patna",
+          "locality": "Rajbansi Nagar",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6115304673",
+          "longitude": "85.1123422757",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Rajbansi Nagar, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Fast Food, North Indian, Chinese",
+        "average_cost_for_two": 300,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "",
+        "user_rating": {
+          "aggregate_rating": "2.9",
+          "rating_text": "Average",
+          "rating_color": "FFBA00",
+          "rating_obj": {
+            "title": {
+              "text": "2.9"
+            },
+            "bg_color": {
+              "type": "yellow",
+              "tint": "500"
+            }
+          },
+          "votes": 52
+        },
+        "photos_url": "https://www.zomato.com/patna/spicy-food-rajbansi-nagar/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/spicy-food-rajbansi-nagar/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "",
+        "has_online_delivery": 0,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18833682",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/spicy-food-rajbansi-nagar/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
+    },
+    {
+      "restaurant": {
+        "R": {
+          "has_menu_status": {
+            "delivery": -1,
+            "takeaway": -1
+          },
+          "res_id": 18988028,
+          "is_grocery_store": false
+        },
+        "apikey": "3a7bfe94c481177f55e8d7de5fbcf78d",
+        "id": "18988028",
+        "name": "Cafeteria Exclusive Cafe",
+        "url": "https://www.zomato.com/patna/cafeteria-exclusive-cafe-anandpuri?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1",
+        "location": {
+          "address": "West Boring Canal Road, Beside Medicana, Anandpuri, Patna",
+          "locality": "Anandpuri",
+          "city": "Patna",
+          "city_id": 40,
+          "latitude": "25.6098119899",
+          "longitude": "85.1173844934",
+          "zipcode": "",
+          "country_id": 1,
+          "locality_verbose": "Anandpuri, Patna"
+        },
+        "switch_to_order_menu": 0,
+        "cuisines": "Fast Food, Chinese, Beverages",
+        "average_cost_for_two": 200,
+        "price_range": 1,
+        "currency": "Rs.",
+        "offers": [],
+        "opentable_support": 0,
+        "is_zomato_book_res": 0,
+        "mezzo_provider": "OTHER",
+        "is_book_form_web_view": 0,
+        "book_form_web_view_url": "",
+        "book_again_url": "",
+        "thumb": "https://b.zmtcdn.com/data/pictures/8/18988028/46d64017564b8d19fc1756ae3aca58f2.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A",
+        "user_rating": {
+          "aggregate_rating": "3.9",
+          "rating_text": "Good",
+          "rating_color": "9ACD32",
+          "rating_obj": {
+            "title": {
+              "text": "3.9"
+            },
+            "bg_color": {
+              "type": "lime",
+              "tint": "600"
+            }
+          },
+          "votes": 60
+        },
+        "photos_url": "https://www.zomato.com/patna/cafeteria-exclusive-cafe-anandpuri/photos?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1#tabtop",
+        "menu_url": "https://www.zomato.com/patna/cafeteria-exclusive-cafe-anandpuri/menu?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1&openSwipeBox=menu&showMinimal=1#tabtop",
+        "featured_image": "https://b.zmtcdn.com/data/pictures/8/18988028/46d64017564b8d19fc1756ae3aca58f2.jpg?output-format=webp",
+        "has_online_delivery": 1,
+        "is_delivering_now": 0,
+        "store_type": "",
+        "include_bogo_offers": true,
+        "deeplink": "zomato://restaurant/18988028",
+        "is_table_reservation_supported": 0,
+        "has_table_booking": 0,
+        "events_url": "https://www.zomato.com/patna/cafeteria-exclusive-cafe-anandpuri/events#tabtop?utm_source=api_basic_user&utm_medium=api&utm_campaign=v2.1"
+      }
     }
   ]
 }

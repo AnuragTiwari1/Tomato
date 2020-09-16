@@ -5,7 +5,6 @@ import axios from 'axios';
 import {
   fireEvent,
   render,
-  waitFor,
   waitForElementToBeRemoved,
 } from '@testing-library/react-native';
 import HomeScreen from '../src/pages/landing';
@@ -16,15 +15,6 @@ import {
 } from '../src/lang/common';
 import {useNavigation} from '@react-navigation/native';
 const geocodeMockData = require('../mock_server/geocode.json');
-
-jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper'); //this disables the useNativeDriver warnings
-
-jest.mock('@react-navigation/native', () => {
-  return {
-    createNavigatorFactory: jest.fn(),
-    useNavigation: jest.fn(),
-  };
-});
 
 jest.mock('@react-native-community/geolocation', () => ({
   getCurrentPosition: jest.fn((callback) => {
@@ -38,14 +28,16 @@ jest.mock('@react-native-community/geolocation', () => ({
 }));
 
 it('renders correctly', async () => {
-  axios.get.mockImplementation(() => Promise.resolve(''));
+  axios.get.mockImplementation(() => Promise.resolve({data: geocodeMockData}));
   const mockNavigate = jest.fn();
   useNavigation.mockImplementation(() => ({navigate: mockNavigate}));
 
-  const {getByText, getByPlaceholderText, queryByText} = render(<HomeScreen />);
+  const {getByText, getByPlaceholderText, queryAllByText} = render(
+    <HomeScreen />,
+  );
 
   //checking if the loader appears on first mount
-  expect(getByText(LOADING_RESTAURANT_NEARBY)).toBeTruthy();
+  expect(queryAllByText(LOADING_RESTAURANT_NEARBY)).toHaveLength(1);
 
   //checking if we are able to receive the location
   expect(Geolocation.getCurrentPosition).toBeCalledTimes(1);
@@ -60,7 +52,7 @@ it('renders correctly', async () => {
   });
 
   //checking if we are showing the api data or not
-  // expect(queryByText('Otto Enoteca & Pizzeria')).toHaveLength(3);
+  expect(queryAllByText('LBW - Lounge Before Wicket')).toHaveLength(3);
 
   //testing navigation on input focus
   const searchBox = getByPlaceholderText(SEARCH_PLACEHOLDER);

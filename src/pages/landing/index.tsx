@@ -23,6 +23,7 @@ const HomeScreen = () => {
   const [currentId, setCurrentId] = React.useState<number | null>(); //this thing is not being used in ui rendering so can be optimized with ref
   const restaurantServices = new RestaurantServices();
 
+
   React.useEffect(() => {
     const {lat, lon} = location;
     if (lat && lon) {
@@ -71,7 +72,7 @@ const HomeScreen = () => {
         ) : null}
         <FlatList
           contentContainerStyle={styles.list_wrapper}
-          data={restaurantList}
+          data={restaurantList || []}
           renderItem={({item}) => {
             return <RestaurantPreview {...item} onPress={() => {}} />;
           }}
