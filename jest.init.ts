@@ -1,5 +1,4 @@
-import '@testing-library/jest-native/extend-expect';
-
+import 'react-native';
 jest.mock('react-native/Libraries/Animated/src/NativeAnimatedHelper'); //this disables the useNativeDriver warnings
 
 jest.mock('@react-navigation/native', () => {

@@ -5,7 +5,7 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   overrides: [
     {
-      files: ['jest.init.ts'],
+      files: ['**/*.spec.ts', 'jest.init.ts'],
       env: {
         jest: true, // now **/*.test.js files' env has both es6 *and* jest
       },
