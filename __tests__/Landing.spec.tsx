@@ -1,5 +1,4 @@
 import 'react-native';
-import '@testing-library/jest-native/extend-expect';
 import React from 'react';
 import axios from 'axios';
 import {
@@ -27,10 +26,15 @@ jest.mock('@react-native-community/geolocation', () => ({
   }),
 }));
 
+const mockedAxios = axios as jest.Mocked<typeof axios>;
+const mockedUseNavigation = useNavigation as jest.Mock<typeof useNavigation>;
+
 it('renders correctly', async () => {
-  axios.get.mockImplementation(() => Promise.resolve({data: geocodeMockData}));
+  mockedAxios.get.mockImplementation(() =>
+    Promise.resolve({data: geocodeMockData}),
+  );
   const mockNavigate = jest.fn();
-  useNavigation.mockImplementation(() => ({navigate: mockNavigate}));
+  mockedUseNavigation.mockImplementation(() => ({navigate: mockNavigate}));
 
   const {getByText, getByPlaceholderText, queryAllByText} = render(
     <HomeScreen />,
@@ -46,8 +50,8 @@ it('renders correctly', async () => {
   await waitForElementToBeRemoved(() => getByText(LOADING_RESTAURANT_NEARBY));
 
   //making assertion on api call arguments
-  expect(axios.get).toBeCalledTimes(1);
-  expect(axios.get).toBeCalledWith('/geocode', {
+  expect(mockedAxios.get).toBeCalledTimes(1);
+  expect(mockedAxios.get).toBeCalledWith('/geocode', {
     params: {lat: 18.54321, lon: 72.3456},
   });
 

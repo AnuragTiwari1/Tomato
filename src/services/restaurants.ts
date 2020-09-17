@@ -6,7 +6,7 @@ import {
   ILocation,
 } from './interfaces/IRestaurantsServices';
 import {HttpCaller} from './HttpCaller';
-const geocodedata = require('../../mock_server/geocode.json');
+
 export class RestaurantServices extends HttpCaller {
   /**
    * searchRestaurants
