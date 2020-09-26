@@ -5,6 +5,7 @@ import {ListRestaurants} from './pages/ListRestaurants';
 import {createSharedElementStackNavigator} from 'react-navigation-shared-element';
 import {SearchScreen} from './pages/SearchScreen';
 import {RestaurantDetails} from './pages/RestaurantDetails';
+import {GoogleAssistantScreen} from './pages/GoogleAssistant';
 
 const Stack = createSharedElementStackNavigator();
 
@@ -19,6 +20,12 @@ const AppRoutes = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        <Stack.Screen
+          component={GoogleAssistantScreen}
+          name="GoogleAssist"
+          options={{headerShown: false}}
+        />
+
         <Stack.Screen
           options={{headerShown: false}}
           name="Tomato"

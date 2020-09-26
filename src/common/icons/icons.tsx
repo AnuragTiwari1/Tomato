@@ -13,7 +13,7 @@ export type INamedIcons = Omit<VectorIconProps, 'name'>;
 
 export const iconSizes: Record<IconSizes, number> = {
   small: 12,
-  base: 20,
+  base: 25,
   large: 50,
 };
 
